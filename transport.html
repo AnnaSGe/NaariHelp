@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Map - Chennai</title>
+    <link rel="stylesheet" href="transport.css">
+</head>
+<body>
+    <header>
+        <!-- <nav>
+            <a href="#" id="Logo">NaariHelp</a>
+            <a href="/Home.html" class="Header">Home</a>
+            <a href="/about.html" class="Header">About</a>
+            <a href="/FAQ.html" class="Header">FAQ</a>
+            <a href="/Contact.html" class="Header1">Contact us</a>
+        </nav> -->
+        <h1>Transport Section Map - Chennai</h1>
+    </header>
+    <main>
+        <section class="map-section">
+            <div id="map"></div>
+        </section>
+    </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6hQdNT_Ampq3wDEy4-u_jLYgNjGrjIVw&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            // Map options
+            const options = {
+                zoom: 12,
+                center: { lat: 13.0827, lng: 80.2707 } // Chennai coordinates
+            };
+
+            // Create a new map
+            const map = new google.maps.Map(document.getElementById('map'), options);
+
+            // Add a marker
+            const marker = new google.maps.Marker({
+                position: { lat: 13.0827, lng: 80.2707 }, // Chennai coordinates
+                map: map,
+                title: 'Chennai'
+            });
+        }
+    </script>
+</body>
+</html>

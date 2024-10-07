@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Map - Chennai</title>
+    <link rel="stylesheet" href="transport1.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h2>Driver Section</h2>
+            <form class="form">
+                <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+                <input type="number" id="age" name="age" placeholder="Age" required>
+                <input type="file" id="adhaar" name="adhaar" accept="image/*" required>
+                <button type="submit" class="signin-button">Submit</button>
+            </form>
+            <p>**Provide Aadhaar card picture for validation</p>
+        </div>
+
+        <div class="container">
+            <h2>Client Section</h2>
+            <form class="form">
+                <input type="text" id="company" name="company" placeholder="Company Name" required>
+                <input type="text" id="requirement" name="requirement" placeholder="Requirement" required>
+                <select id="city" name="city" required>
+                    <option value="" disabled selected>Select City</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="mumbai">Mumbai</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="blr">Bangalore</option>
+                </select>
+                <button type="submit" class="signin-button">Submit</button>
+            </form>
+            <p>To search your location:</p>
+            <button class="location-button">Location</button>
+        </div>
+    </main>
+    <script src="transport1.js"></script>
+</body>
+</html>

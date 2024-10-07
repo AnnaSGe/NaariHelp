@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Form</title>
+    <link rel="stylesheet" href="education.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Education Form</h2>
+        <form class="form" action="education_action.php">
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            <input type="text" id="email" name="email" placeholder="Email">
+            <input type="number" id="phone" name="phone" placeholder="Phone Number">
+            <select id="city" name="city">
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="chennai">Chennai</option>
+                <option value="blr">Bangalore</option>
+            </select>
+            <textarea id="requirement" name="requirement" placeholder="Number of students available and volunteers required" style="height: 100px;"></textarea>
+            <button type="submit" class="signin-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
